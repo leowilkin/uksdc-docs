@@ -6,8 +6,6 @@ import starlightLinksValidator from 'starlight-links-validator';
 import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
 import starlightLlmsTxt from 'starlight-llms-txt';
 import starlightScrollToTop from 'starlight-scroll-to-top';
-import starlightContextualMenu from "starlight-contextual-menu";
-
 
 export default defineConfig({
     site: 'https://uksdc.leowilkin.com',
@@ -17,10 +15,6 @@ export default defineConfig({
             viewTransitions(),
             starlightLlmsTxt(),
             starlightScrollToTop(),
-                starlightContextualMenu({
-                    actions: ["copy", "view", "chatgpt", "claude"]
-                }),
-                
         ],
         title: 'Unofficial UKSDC Docs',
 		editLink: {
