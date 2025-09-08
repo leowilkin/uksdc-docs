@@ -10,10 +10,6 @@ export default defineConfig({
 			social: [{ icon: 'open-book', label: 'UKSDC Homepage', href: 'https://uksdc.org/' }],
 			sidebar: [
 				{
-					label: 'RFP Sections',
-					autogenerate: { directory: 'rfp' },
-				},
-				{
 					label: 'Prime Contractors',
 					autogenerate: { directory: 'prime-contractors' },
 				},
@@ -22,8 +18,8 @@ export default defineConfig({
 					autogenerate: { directory: 'subcontractors' },
 				},
 				{
-					label: 'Settlements',
-					autogenerate: { directory: 'settlements' },
+					label: 'RFP Sections',
+					autogenerate: { directory: 'rfp' },
 				},
 				{
 					label: 'The Foundation Society',

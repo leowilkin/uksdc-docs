@@ -1,36 +1,35 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: UK Space Design Competition
+description: Unofficial reference and resources for the UK Space Design Competition.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Welcome to the UKSDC Docs Mirror
   actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Prime Contractors
+      link: /prime-contractors/
+    - text: Subcontractors
+      link: /subcontractors/
+    - text: Foundation Society
+      link: /foundation-society/
+    - text: RFP Sections
+      link: /rfp/
+    - text: Official UKSDC Site
+      link: https://uksdc.org/
       icon: external
-      variant: minimal
+      iconPlacement: start
+      variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+This site is an unofficial mirror of the UK Space Design Competition documentation. All content and details are owned by the Space Science & Engineering Foundation (SSEF).
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+## Quick Links
+
+<CardGrid>
+	<LinkCard title="Prime Contractors" href="/prime-contractors/" description="Explore the main companies responsible for settlement design and construction." />
+	<LinkCard title="Subcontractors" href="/subcontractors/" description="Discover the specialist companies supporting the settlements" />
+	<LinkCard title="Foundation Society" href="/foundation-society/" description="Learn about the fictional super-national body that governs and funds space settlements." />
+	<LinkCard title="RFP Sections" href="/rfp/" description="Review the requirements and deliverables for each department." />
+	<LinkCard title="Official UKSDC Site" href="https://uksdc.org/" description="Visit the official UKSDC website for authoritative information." />
 </CardGrid>
