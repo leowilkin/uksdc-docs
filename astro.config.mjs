@@ -2,10 +2,26 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
+import starlightLinksValidator from 'starlight-links-validator';
+import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
+import starlightLlmsTxt from 'starlight-llms-txt';
+import starlightScrollToTop from 'starlight-scroll-to-top';
+import starlightContextualMenu from "starlight-contextual-menu";
+
 
 export default defineConfig({
     site: 'https://uksdc.leowilkin.com',
     integrations: [starlight({
+        plugins: [
+            starlightLinksValidator(),
+            viewTransitions(),
+            starlightLlmsTxt(),
+            starlightScrollToTop(),
+                starlightContextualMenu({
+                    actions: ["copy", "view", "chatgpt", "claude"]
+                }),
+                
+        ],
         title: 'Unofficial UKSDC Docs',
 		editLink: {
 			baseUrl: 'https://github.com/leowilkin/uksdc-docs/edit/main/',
