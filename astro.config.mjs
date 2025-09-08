@@ -14,7 +14,10 @@ export default defineConfig({
             light: './src/assets/light.png',
             dark: './src/assets/dark.png',
         },
-        social: [{ icon: 'open-book', label: 'UKSDC Homepage', href: 'https://uksdc.org/' }],
+        social: [
+			{ icon: 'open-book', label: 'UKSDC Homepage', href: 'https://uksdc.org/' },
+			{ icon: 'github', label: 'GitHub', href: 'https://github.com/leowilkin/uksdc-docs' },
+		],
         sidebar: [
             {
                 label: 'Prime Contractors',
