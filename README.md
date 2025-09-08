@@ -1,37 +1,22 @@
-# Starlight Starter Kit: Basics
+# UKSDC Docs (Unofficial Mirror)
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+This repository is an unofficial mirror of the UK Space Design Competition (UKSDC) documentation site.
 
-```
-npm create astro@latest -- --template starlight
-```
+All content, details, and intellectual property are owned by the Space Science & Engineering Foundation (SSEF).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## About
 
-## 🚀 Project Structure
+This documentation site provides reference material, background, and resources for participants in the UKSDC. It is intended for educational and archival purposes only.
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Disclaimer
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+This is not an official UKSDC or SSEF resource. For the latest and authoritative information, please visit the official UKSDC website: [uksdc.org](https://uksdc.org/).
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## License
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+All content is © SSEF and subject to their terms and conditions. This mirror is provided for convenience and educational use only.
 
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -43,7 +28,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

@@ -6,20 +6,29 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Unofficial UKSDC Docs',
+			social: [{ icon: 'open-book', label: 'UKSDC Homepage', href: 'https://uksdc.org/' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'RFP Sections',
+					autogenerate: { directory: 'rfp' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Prime Contractors',
+					autogenerate: { directory: 'prime-contractors' },
 				},
+				{
+					label: 'Subcontractors',
+					autogenerate: { directory: 'subcontractors' },
+				},
+				{
+					label: 'Settlements',
+					autogenerate: { directory: 'settlements' },
+				},
+				{
+					label: 'The Foundation Society',
+					autogenerate: { directory: 'foundation-society' },
+				}
 			],
 		}),
 	],
