@@ -1,0 +1,36 @@
+---
+title: Fission Frontiers
+description: Fission Frontiers - Electrical
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside title="TL;DR">
+Three space-rated fission reactors, from the 250 MW Wyvern at $300 million to the 1,000 MW Tarasque at $3 billion, with radiator area sized to the client's needs.
+</Aside>
+
+The only company to get their reactor designs space rated in cooperation with the Foundation Society. They provide standard designs but will work with clients to deliver specific design features or specifications where these are not adequate.
+
+- **Tarasque** – Molten-salt cooled, pebble-bed, thermal, uranium fuelled VHTR; $3,000,000,000; 3,000,000 kg
+- **Aboleth** – Lead cooled, fuel rod, uranium fuelled fast breeder reactor; $1,200,000,000; 1,100,000 kg
+- **Wyvern** – Natural convection, fuel rod, thermal, uranium fuelled LWR; $300,000,000; 400,000 kg
+
+## Radiators and electrical power
+
+The efficiency of nuclear reactors at converting the produced thermal power into electrical power is governed by how cool the reactor runs. Therefore, Fission Frontiers recommends that radiators are used to control the output temperature, where a larger radiator area runs cooler, improving the conversion efficiency of the system and therefore the electrical power it produces. **Fission Frontiers provides an area of radiators as specified by the client depending on their needs.**
+
+The electrical power produced for each reactor can be estimated with the formula below:
+
+> Electrical Power (MW) = A ln(Radiating Area (m²)) – B
+
+Fission Frontiers has calculated the abstract values A and B for each reactor as shown below, which consider the relevant thermal power and output temperature (these are also given for reference only).
+
+| Reactor  | Thermal Power (MW) | Output Temperature (K) | A     | B     | Radiating Area bounds (m²) |
+| -------- | ------------------ | ---------------------- | ----- | ----- | -------------------------- |
+| Tarasque | 1000               | 1300                   | 104.6 | 842.2 | 12,000 – 600,000           |
+| Aboleth  | 500                | 1100                   | 55.59 | 445.2 | 12,000 – 400,000           |
+| Wyvern   | 250                | 600                    | 32.46 | 331.8 | 70,000 – 600,000           |
+
+To better understand the relationship of this equation, the below graph shows the power output vs radiator area for all three reactors. The formula given and values A and B for each reactor are the best fit of these curves.
+
+![Graph of electrical power output against radiating area for the Tarasque, Aboleth and Wyvern reactors](/images/electrical-graph.png)

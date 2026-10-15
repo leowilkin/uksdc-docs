@@ -1,0 +1,54 @@
+{
+  "sidebar": [
+    {
+      "label": "Prime Contractors",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "prime-contractors"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Subcontractors",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "subcontractors"
+          }
+        }
+      ]
+    },
+    {
+      "label": "RFP Sections",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "rfp"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Guides",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "guides"
+          }
+        }
+      ]
+    },
+    {
+      "label": "The Foundation Society",
+      "items": [
+        {
+          "autogenerate": {
+            "directory": "foundation-society"
+          }
+        }
+      ]
+    }
+  ]
+}

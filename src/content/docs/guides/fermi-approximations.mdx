@@ -1,0 +1,62 @@
+---
+title: Fermi Approximations
+description: How to estimate obscure values using more readily available information, with a worked UKSDC example.
+sidebar:
+  order: 1
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+<Aside>Ported from the UKSDC resource _Numerical Approximations and Costings_. The original PDF is available from the [official UKSDC site](https://uksdc.org/).</Aside>
+
+## Why approximations are needed
+
+Regardless of your role within the UKSDC, we can guarantee that at some point in the competition you will have to come up with an estimate for an obscure value for which even the almighty Google can give no useful answer. Examples could include values such as "the average power consumption per capita on a luxury space settlement in Earth orbit" or "the temperature variations at a given depth below the surface of Mercury". For values such as these it will be up to you to come up with a sensible estimate using more readily available information, with one of the best techniques for this being the Fermi approximation.
+
+## Video suggestions
+
+The basic premise of a Fermi approximation will be explained in a worked UKSDC example below, but readers may find the principle easier to understand from the plethora of online resources on this topic. This author would personally recommend the video below, although feel free to find your own source of information.
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/INlPbfBGPtw"
+    title="Fermi approximation explainer video"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
+
+If the embed doesn't load, [watch it on YouTube](https://www.youtube.com/watch?v=INlPbfBGPtw).
+
+## A worked UKSDC example
+
+For the worked example, we will look to calculate the first of the examples given above: "the average power consumption per capita on a luxury space settlement in Earth orbit", focussing specifically on their direct power consumption, as well as the consumption of essential life support systems to support them.
+
+<Aside type="caution">
+This approximation is not universally applicable to all settlements within the UKSDC universe, as factors such as settlement location and standard of living play key factors in determining the power consumption. It also does not include power consumption of industry or research that could take place on a settlement, and therefore should not be directly copied as a method of approximating settlement power consumption during the competition, although it may act as inspiration.
+</Aside>
+
+### Step 1: a luxury home on Earth
+
+Firstly, we will look to approximate the power consumption of a luxury home on Earth, as this should give a good representation of the power consumption for things such as lighting and electronic devices within the home.
+
+Using information from the [UCLA Energy Atlas](https://www.energyatlas.ucla.edu/), which documents power consumption across California, and focusing on [usage in Los Angeles](https://www.latimes.com/science/la-me-1001-ucla-energy-data-20151001-story.html), we can see that the power consumption of the average household was 7,000 kWh (25,200,000,000 J) per annum. We can also see that buildings larger than 10,000 square feet made up 4.4% of these households, but used 47% of the electricity. For our purpose, these are the "luxury" households, suggesting each one consumes 269,000,000,000 J per year, or 8,500 W.
+
+Given the [average household consists of 2.6 people](https://www.census.gov/quickfacts/fact/table/US/HCN010217), this means an average power consumption per capita of 3,300 W for luxury living.
+
+### Step 2: life support
+
+In order to approximate the power consumption of Environmental Control and Life Support Systems (ECLSS) for a settlement in Earth orbit, we shall base our values off of the International Space Station. The ISS can use anywhere between [84,000 W and 120,000 W](https://www.nasa.gov/mission_pages/station/structure/elements/solar_arrays-about.html) to support its inhabitants, which is [typically 7 people](https://www.space.com/16748-international-space-station.html).
+
+Making an educated assumption that around 25% of this power is used for non-essential purposes, such as research missions on the station, we can assume a per capita power consumption for ECLSS of around 10,000 W.
+
+### Step 3: combine
+
+Combining these values, we obtain a per capita power consumption of around 13,000 W, which can be multiplied by the number of people in the settlement to give an estimation for the total power consumption to support the residents with this lifestyle.
+
+| Component                     | Per capita |
+| ----------------------------- | ---------- |
+| Luxury domestic consumption   | 3,300 W    |
+| Life support (ECLSS)          | 10,000 W   |
+| **Total**                     | **~13,000 W** |
